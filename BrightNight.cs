@@ -13,7 +13,7 @@ using Oxide.Core.Libraries.Covalence;
 
 namespace Oxide.Plugins
 {
-    [Info("BrightNight", "RustySpoon,CaptainNebulous,Clearshot", "1.0.5", ResourceId = 1)]
+    [Info("BrightNight", "RustySpoon,CaptainNebulous,Clearshot", "1.0.6", ResourceId = 1)]
     [Description("Custom Weather To Allow For A Brighter Night")]
     class BrightNight : RustPlugin
     {
@@ -803,7 +803,7 @@ namespace Oxide.Plugins
                            {2360, new List<string> {"weather.cloud_coverage 0.877" } },
                            {2365, new List<string> {"weather.cloud_coverage 0.875" } },
                            {2370, new List<string> {"weather.cloud_coverage 0.872" } },
-                           {2375, new List<string> {"weather.rain 0.4", "weather.wind 0.1", "weather.thunder 1", "weather.cloud_coverage 0.87" } },
+                           {2375, new List<string> {"weather.rain 0.4", "weather.wind 0.1", "weather.thunder 0.5", "weather.cloud_coverage 0.87" } },
                            {2380, new List<string> {"weather.cloud_coverage 0.867" } },
                            {2385, new List<string> {"weather.cloud_coverage 0.865" } },
                            {2390, new List<string> {"weather.fog 0.4", "weather.cloud_coverage 0.862" } },
@@ -827,7 +827,7 @@ namespace Oxide.Plugins
                            {2480, new List<string> {"weather.fog 0.34", "weather.cloud_coverage 0.817" } },
                            {2485, new List<string> {"weather.cloud_coverage 0.815" } },
                            {2490, new List<string> {"weather.cloud_coverage 0.812" } },
-                           {2495, new List<string> {"weather.rain 0.3", "weather.cloud_coverage 0.81", "weather.thunder 0.5" } },
+                           {2495, new List<string> {"weather.rain 0.3", "weather.cloud_coverage 0.81", "weather.thunder -1" } },
                            {2500, new List<string> {"weather.cloud_coverage 0.807"} },
                            {2505, new List<string> {"weather.cloud_coverage 0.805" } },
                            {2510, new List<string> {"weather.cloud_coverage 0.802" } },
@@ -1571,7 +1571,7 @@ namespace Oxide.Plugins
                         {3065, new List<string> {"weather.cloud_coverage 0.497" } },
                         {3070, new List<string> {"weather.cloud_coverage 0.495" } },
                         {3075, new List<string> {"weather.cloud_coverage 0.492"} },
-                        {3080, new List<string> {"weather.cloud_coverage 0.49" } },
+                        {3080, new List<string> {"weather.cloud_coverage 0.49", "weather.fog -1" } },
                         {3085, new List<string> {"weather.cloud_coverage 0.487" } },
                         {3090, new List<string> {"weather.cloud_coverage 0.485" } },
                         {3095, new List<string> {"weather.cloud_coverage 0.482", "weather.wind 0.2" } },
@@ -2546,7 +2546,7 @@ namespace Oxide.Plugins
                         {130, new List<string> {"weather.cloud_opacity 0.72" } },
                         {135, new List<string> {"weather.cloud_opacity 0.71" } },
                         {140, new List<string> {"weather.cloud_opacity 0.7" } },
-                        {145, new List<string> {"weather.cloud_opacity 0.69", "weather.atmosphere_rayleigh 1.5", "weather.cloud_size 0.7" } },
+                        {145, new List<string> {"weather.cloud_opacity 0.69", "weather.atmosphere_rayleigh 1.5" } },
                         {150, new List<string> {"weather.cloud_opacity 0.68" } },
                         {155, new List<string> {"weather.cloud_opacity 0.67" } },
                         {160, new List<string> {"weather.cloud_opacity 0.66" } },
@@ -2600,7 +2600,7 @@ namespace Oxide.Plugins
                         {2565, new List<string> {"weather.fog 0.22" } },
                         {2570, new List<string> {"weather.fog 0.2" } },
                         {2575, new List<string> {"weather.fog 0.19" } },
-                        {2580, new List<string> {"weather.fog 0.18", "weather.atmosphere_rayleigh 3.0" } },
+                        {2580, new List<string> {"weather.fog 0.18" } },
                         {2585, new List<string> {"weather.fog 0.17" } },
                         {2590, new List<string> {"weather.fog 0.16" } },
                         {2595, new List<string> {"weather.fog 0.15" } },
@@ -2614,7 +2614,7 @@ namespace Oxide.Plugins
                         {2635, new List<string> {"weather.fog 0.07" } },
                         {2640, new List<string> {"weather.fog 0.06" } },
                         {2645, new List<string> {"weather.fog 0.05" } },
-                        {2650, new List<string> {"weather.fog 0.04", "weather.atmosphere_rayleigh 2.0" } },
+                        {2650, new List<string> {"weather.fog 0.04" } },
                         {2655, new List<string> {"weather.fog 0.03" } },
                         {2660, new List<string> {"weather.fog 0.02" } },
                         {2665, new List<string> {"weather.fog 0.01" } },
